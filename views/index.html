@@ -1,0 +1,26 @@
+{% extends './layout.html' %}
+
+{% block title %}
+    图书列表
+{%endblock%}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for item in data %}
+    <li>
+        [[ item.booksname ]]
+    </li>
+    {% endfor %}
+  </ul>
+  <hr/>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        console.log("我是首页");
+    </script>
+{% endblock %}
